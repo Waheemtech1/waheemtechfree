@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WAHEEMTECH - Free Tech Learning Hub</title>
+  <style>
+    @media screen and (max-width: 768px) {
+
+      header,
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+        display: block;
+      }
+
+      .hero {
+        padding: 3rem 1rem;
+      }
+
+      .section {
+        padding: 1rem;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        font-size: 1rem;
+      }
+
+      .form-group {
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('waheemtech logo.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 14rem 5rem;
+      text-align: right;
+    }
+
+    .section {
+      padding: 2rem;
+    }
+
+    .course {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .contact {
+      padding: 20px 40px;
+      height: 70vh;
+    }
+
+    .contact h1 {
+      font-size: 30px;
+      color: black;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+      width: 30%;
+      border: none;
+    }
+
+    .submit input {
+      background-color: green;
+      width: 27.5%;
+      border: none;
+      color: white;
+    }
+
+    ::placeholder {
+      color: black;
+    }
+
+    button {
+      background: #0a0a23;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #0a0a23;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>WAHEEMTECH</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#learning">Free Portfolio Learning</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#headline">Tech Headline</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to WAHEEMTECH</h2>
+    <p>Empowering Minds Through Free Tech Education in Nigeria</p>
+  </section>
+
+  <section id="learning" class="section">
+    <h2>Free Portfolio Learning</h2>
+    <div class="course">
+      <h3>Software Development</h3>
+      <p>Learn full-stack development, build real-world apps and projects.</p>
+      <button onclick="location.href='#register'">Register</button>
+    </div>
+    <div class="course">
+      <h3>Ethical Hacking</h3>
+      <p>Understand cybersecurity, penetration testing, and real hacking tools.</p>
+      <button onclick="location.href='#register'">Register</button>
+    </div>
+    <div class="course">
+      <h3>AI & Machine Learning</h3>
+      <p>Master AI models, datasets, and intelligent systems development.</p>
+      <button onclick="location.href='#register'">Register</button>
+    </div>
+    <div class="course">
+      <h3>Embedded Systems & Robotics</h3>
+      <p>Explore Arduino, ESP32, sensors, and robotics programming.</p>
+      <button onclick="location.href='#register'">Register</button>
+    </div>
+    <div class="course">
+      <h3>Trading & Online Money Making</h3>
+      <p>Learn crypto, forex, stocks, and digital income skills.</p>
+      <button onclick="location.href='#register'">Register</button>
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <h2>Apply for Free Class</h2>
+    <form id="audienceForm">
+      <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+      <div class="form-group"><input type="email" placeholder="Email" required></div>
+      <div class="form-group"><input type="tel" placeholder="Phone Number" required></div>
+      <div class="form-group"><input type="text" placeholder="Where did you hear about us?" required></div>
+      <div class="form-group"><input type="text" placeholder="Your Location" required></div>
+      <div class="form-group"><input type="date" placeholder="Date of Birth" required></div>
+      <div class="form-group">
+        <select required>
+          <option value="">Select Course</option>
+          <option>Software Development</option>
+          <option>Ethical Hacking</option>
+          <option>AI & Machine Learning</option>
+          <option>Web3 & Blockchain</option>
+          <option>Embedded Systems Robotics</option>
+          <option>Online Money Making & Trading</option>
+        </select>
+      </div>
+      <footer>
+        <p>Follow us on: Make Sure You Follow All the Medias To be Qualified On Free Program:
+          <a href="#">YouTube</a> |
+          <a href="#">TikTok</a> |
+          <a href="#">Instagram</a> |
+          <a href="#">Twitter</a> |
+          <a href="#">Telegram</a> |
+          <a href="#">WhatsApp</a>
+        </p>
+        <div class="form-group">
+          <label>Upload a Proof Screenshot (For YouTube Channel You Subsribe)</label>
+          <input type="file" required>
+        </div>
+        <div class="form-group">
+          <label>Upload a Proof Screenshot (For Telegram Channal You Subscribe)</label>
+          <input type="file" required>
+        </div>
+        <div class="form-group">
+          <label><input type="checkbox" required> I agree to WAHEEMTECH policies and guidelines</label>
+        </div>
+        <div class="form-group"><button type="submit">Click to Apply</button></div>
+    </form>
+    <div class="form-group">
+      <p>Application successful. Please wait for mail to join your class. Thanks for participating.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>WAHEEMTECH is an innovative Nigerian tech brand offering free education in tech fields like coding, robotics,
+      hacking, AI, and financial trading to empower youth and bridge the digital divide.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <h1>SEND US YOUR FEEDBACK</h1><br>
+      <form>
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea name="Message" placeholder="Message" cols="20" rows="10" required></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" value="SUBMIT NOW"> <!--form will be validated-->
+          <br>
+          <p>Email: waheemtech@gmail.com<br>Phone: +234-9061764966</p><br>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="headline" class="section">
+    <h2>Tech Headlines & Free Jobs</h2>
+    <p>Coming Soon: Stay updated on latest tech news, job opportunities, and online gigs that pay!</p>
+  </section>
+  <footer>
+    <p>Follow us on:
+      <a href="#">YouTube</a> |
+      <a href="#">TikTok</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Telegram</a> |
+      <a href="#">WhatsApp</a>
+    </p>
+    <p>&copy; 2025 WAHEEMTECH. All rights reserved.</p>
+  </footer>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+
+    // Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMC2-cMIGS9wpDKlAWIJ0wArRlKYDqvzs",
+      authDomain: "freeclasswaheemtech.firebaseapp.com",
+      databaseURL: "https://freeclasswaheemtech.firebaseio.com",
+      projectId: "freeclasswaheemtech",
+      storageBucket: "freeclasswaheemtech.firebasestorage.app",
+      messagingSenderId: "520516252714",
+      appId: "1:520516252714:web:124d1060d13cdf6a4abf53"
+
+    };
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    //const storage = getStorage(app);
+    const analytics = getAnalytics(app);
+
+      // Example: save data function
+  function saveData() {
+    push(ref(db, "applications/"), {
+      name: document.getElementById("fullName").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      referral: document.getElementById("referral").value,
+      location: document.getElementById("location").value,
+      dob: document.getElementById("dob").value,
+      course: document.getElementById("course").value,
+    })
+    .then(() => {
+      alert("Data saved successfully!");
+    })
+    .catch((error) => {
+      console.error("Error saving data:", error);
+    });
+  }
+
+  document.getElementById("submitBtn").addEventListener("click", saveData);
+
+    const form = document.getElementById("audienceForm");
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const referral = document.getElementById('referral').value;
+      const location = document.getElementById('location').value;
+      const dob = document.getElementById('dob').value;
+      const course = document.getElementById('course').value;
+      const agree = document.getElementById('agree').checked;
+
+      const youtubeFile = document.querySelector('input[type=\"file\"]:nth-of-type(1)').files[0];
+      const telegramFile = document.querySelector('input[type=\"file\"]:nth-of-type(2)').files[0];
+
+      if (!youtubeFile || !telegramFile) {
+        alert('Please upload both screenshots.');
+        return;
+      }
+
+      const timestamp = Date.now();
+
+      // Upload screenshots to Firebase Storage
+      const youtubeRef = storage.ref('screenshots/' + fullName + '_youtube_' + timestamp);
+      const telegramRef = storage.ref('screenshots/' + fullName + '_telegram_' + timestamp);
+
+      try {
+        const [youtubeSnap, telegramSnap] = await Promise.all([
+          youtubeRef.put(youtubeFile),
+          telegramRef.put(telegramFile)
+        ]);
+
+        const youtubeURL = await youtubeSnap.ref.getDownloadURL();
+        const telegramURL = await telegramSnap.ref.getDownloadURL();
+
+        const formData = {
+          fullName,
+          email,
+          phone,
+          referral,
+          location,
+          dob,
+          course,
+          agree,
+          youtubeScreenshot: youtubeURL,
+          telegramScreenshot: telegramURL,
+          submittedAt: new Date().toISOString()
+        };
+
+        await db.ref('applications').push(formData);
+
+        document.getElementById('responseMessage').innerText = '✅ Application successful! Check your mail to join the class.';
+        document.getElementById('applyForm').reset();
+      } catch (error) {
+        console.error('Error uploading:', error);
+        alert('Something went wrong. Try again.');
+      }
+    });
+  </script>
+</body>
+
+</html>
