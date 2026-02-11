@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAHEEMTECH - Free Tech Learning Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-laptop-code"></i>
+      <h1>WAHEEMTECH</h1>
+    </div>
+    <div class="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#learning">Free Portfolio Learning</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#headline">Tech Headline</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to WAHEEMTECH</h2>
+    <p>Empowering Minds Through Free Tech Education in Nigeria</p>
+    <a href="#learning" class="btn">Explore Courses</a>
+  </section>
+
+  <section id="learning" class="section">
+    <h2 class="section-title">Free Portfolio Learning</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="course-content">
+          <h3>Software Development</h3>
+          <p>Learn full-stack development, build real-world apps and projects.</p>
+          <button class="btn" onclick="scrollToRegister()">Register</button>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="course-content">
+          <h3>Ethical Hacking</h3>
+          <p>Understand cybersecurity, penetration testing, and real hacking tools.</p>
+          <button class="btn" onclick="scrollToRegister()">Register</button>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <div class="course-content">
+          <h3>AI & Machine Learning</h3>
+          <p>Master AI models, datasets, and intelligent systems development.</p>
+          <button class="btn" onclick="scrollToRegister()">Register</button>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="course-content">
+          <h3>Embedded Systems & Robotics</h3>
+          <p>Explore Arduino, ESP32, sensors, and robotics programming.</p>
+          <button class="btn" onclick="scrollToRegister()">Register</button>
+        </div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="course-content">
+          <h3>Trading & Online Money Making</h3>
+          <p>Learn crypto, forex, stocks, and digital income skills.</p>
+          <button class="btn" onclick="scrollToRegister()">Register</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="section">
+    <h2 class="section-title">Apply for Free Class</h2>
+    <div class="form-container">
+      <form id="audienceForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="referral">Where did you hear about us?</label>
+          <input type="text" id="referral" placeholder="Social media, friend, etc." required>
+        </div>
+        <div class="form-group">
+          <label for="location">Your Location</label>
+          <input type="text" id="location" placeholder="Enter your location" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+          <label for="course">Select Course</label>
+          <select id="course" required>
+            <option value="">Select a course</option>
+            <option>Software Development</option>
+            <option>Ethical Hacking</option>
+            <option>AI & Machine Learning</option>
+            <option>Web3 & Blockchain</option>
+            <option>Embedded Systems & Robotics</option>
+            <option>Online Money Making & Trading</option>
+          </select>
+        </div>
+        
+        <div class="social-links">
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        
+        <p style="text-align: center; margin-bottom: 1rem;">Make Sure You Follow All the Medias To be Qualified On Free Program</p>
+        
+        <div class="form-group">
+          <label>Upload a Proof Screenshot (For YouTube Channel You Subscribe)</label>
+          <input type="file" class="file-input" id="youtubeProof" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label>Upload a Proof Screenshot (For Telegram Channel You Subscribe)</label>
+          <input type="file" class="file-input" id="telegramProof" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree to WAHEEMTECH policies and guidelines</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-accent" style="width: 100%;">Click to Apply</button>
+        </div>
+      </form>
+      <div id="successMessage" class="success-message">
+        Application successful. Please wait for mail to join your class. Thanks for participating.
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Us</h2>
+    <div class="form-container">
+      <p style="text-align: center; font-size: 1.1rem;">
+        WAHEEMTECH is an innovative Nigerian tech brand offering free education in tech fields like coding, robotics,
+        hacking, AI, and financial trading to empower youth and bridge the digital divide.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="form-container">
+      <h3 style="text-align: center; margin-bottom: 2rem;">SEND US YOUR FEEDBACK</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="contactName" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="contactEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="contactSubject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea id="contactMessage" placeholder="Message" rows="6" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn" style="width: 100%;">SUBMIT NOW</button>
+        </div>
+      </form>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>waheemtech@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+234-9061764966</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="headline" class="section">
+    <h2 class="section-title">Tech Headlines & Free Jobs</h2>
+    <div class="form-container">
+      <p style="text-align: center; font-size: 1.1rem;">
+        Coming Soon: Stay updated on latest tech news, job opportunities, and online gigs that pay!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">YouTube</a>
+      <a href="#">TikTok</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+      <a href="#">Telegram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+    <p>&copy; 2025 WAHEEMTECH. All rights reserved.</p>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
