@@ -449,24 +449,29 @@ $result = mysqli_query($conn, $query);
 
         <div class="bg-white rounded-3xl p-8 md:p-10 border border-slate-100 shadow-sm">
           <h3 class="text-xl font-bold text-slate-800 mb-8 uppercase tracking-tight">Send Us Your Feedback</h3>
-          <form id="contactForm" class="space-y-5">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <input type="text" placeholder="Full Name" required
-                class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition duration-200">
-              <input type="email" placeholder="Email Address" required
-                class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition duration-200">
-            </div>
-            <input type="text" placeholder="Subject" required
-              class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition duration-200">
-            <textarea placeholder="Your Message" rows="5" required
-              class="w-full px-5 py-4 rounded-2xl bg-slate-50 border border-transparent focus:bg-white focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition duration-200 resize-none"></textarea>
+        <form action="contact_process.php" method="POST" class="space-y-5">
 
-            <button type="submit"
-              class="w-full bg-slate-900 hover:bg-blue-600 text-white py-4 rounded-2xl font-bold text-lg shadow-lg transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
-              <span>SUBMIT NOW</span>
-              <i class="fas fa-paper-plane text-xs"></i>
-            </button>
-          </form>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <input type="text" name="full_name" placeholder="Full Name" required
+      class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+
+    <input type="email" name="email" placeholder="Email Address" required
+      class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+  </div>
+
+  <input type="text" name="subject" placeholder="Subject" required
+    class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+
+  <textarea name="message" rows="5" placeholder="Your Message" required
+    class="w-full px-5 py-4 rounded-2xl bg-slate-50 border resize-none"></textarea>
+
+  <button type="submit"
+    class="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold">
+    SUBMIT NOW
+  </button>
+
+</form>
+
         </div>
 
       </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2026 at 01:04 PM
+-- Generation Time: Feb 11, 2026 at 01:26 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -45,6 +45,21 @@ INSERT INTO `admins` (`admin_id`, `fullname`, `email`, `password`, `created_at`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
+  `full_name` varchar(150) NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `subject` varchar(200) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `free_class_applications`
 --
 
@@ -66,13 +81,6 @@ CREATE TABLE `free_class_applications` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `free_class_applications`
---
-
-INSERT INTO `free_class_applications` (`id`, `fullname`, `email`, `phone`, `course`, `location`, `dob`, `youtube`, `tiktok`, `instagram`, `twitter`, `telegram`, `whatsapp`, `status`, `created_at`) VALUES
-(3, 'Tahir Sani', 'sanitahir56@gmail.com', '09023560765', 'Trending Financial Skills', 'gombe state', '2026-02-11', 'WT_698bbb66567b4_1770765158.jpg', 'WT_698bbb6657014_1770765158.jpg', 'WT_698bbb66577b2_1770765158.jpg', 'WT_698bbb6657cea_1770765158.jpg', 'WT_698bbb66581d0_1770765158.jpg', 'whatsappplaceholder.jpg', 'Rejected', '2026-02-10 23:12:38');
-
 -- --------------------------------------------------------
 
 --
@@ -89,13 +97,6 @@ CREATE TABLE `news_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `news_posts`
---
-
-INSERT INTO `news_posts` (`id`, `platform`, `title`, `post_link`, `status`, `created_at`) VALUES
-(1, 'facebook', 'Just Abdul', 'https://web.facebook.com/justabdul313/videos/2328934710823510/', 'active', '2026-02-10 23:53:55');
-
---
 -- Indexes for dumped tables
 --
 
@@ -105,6 +106,12 @@ INSERT INTO `news_posts` (`id`, `platform`, `title`, `post_link`, `status`, `cre
 ALTER TABLE `admins`
   ADD PRIMARY KEY (`admin_id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `free_class_applications`
@@ -129,6 +136,12 @@ ALTER TABLE `admins`
   MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `free_class_applications`
 --
 ALTER TABLE `free_class_applications`
@@ -138,7 +151,7 @@ ALTER TABLE `free_class_applications`
 -- AUTO_INCREMENT for table `news_posts`
 --
 ALTER TABLE `news_posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
