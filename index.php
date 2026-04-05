@@ -71,7 +71,7 @@ $result = mysqli_query($conn, $query);
 
         <a href="" class="flex items-center gap-3 group cursor-pointer">
           <div class="bg-blue-600 p-2 rounded-lg group-hover:rotate-12 transition-transform duration-300">
-            <i class="fas fa-laptop-code text-white text-xl"></i>
+            <i class="fas fa-w text-white"></i>
           </div>
           <h1 class="font-extrabold text-2xl tracking-tighter text-slate-800 uppercase">
             Waheem<span class="text-blue-600">Tech</span>
@@ -274,9 +274,9 @@ $result = mysqli_query($conn, $query);
             class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
             <i class="fas fa-chart-line text-2xl"></i>
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-3">Digital Income</h3>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Digital Marketing</h3>
           <p class="text-slate-600 mb-6 leading-relaxed text-sm">
-            Learn crypto, forex, stocks, and build reliable digital income skills for the future.
+            Learn crypto, forex, stocks, and build reliable digital marketing skills for the future.
           </p>
           <button onclick="window.location.href='apply.php'"
             class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-green-600 transition-colors flex items-center justify-center gap-2">
@@ -300,6 +300,128 @@ $result = mysqli_query($conn, $query);
             Apply Now <i class="fas fa-arrow-right text-xs"></i>
           </button>
         </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="services" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">
+          Our Professional Jobs
+        </h2>
+        <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-slate-600 font-medium">
+          We build smart, scalable, and high-performance digital solutions for businesses and individuals.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- 1 -->
+        <div
+          class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div
+            class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <i class="fas fa-code text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Software Development</h3>
+          <p class="text-slate-600 mb-6 text-sm">
+            Custom web apps, mobile apps, dashboards, and full-stack systems built with modern technologies.
+          </p>
+          <button onclick="window.location.href='#about'"
+            class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-blue-600 transition flex items-center justify-center gap-2">
+            Get Contact <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- 2 -->
+        <div
+          class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div
+            class="w-16 h-16 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+            <i class="fas fa-microchip text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Embedded Systems & IoT</h3>
+          <p class="text-slate-600 mb-6 text-sm">
+            Smart device solutions using Arduino, ESP32, sensors, and real-time automation systems.
+          </p>
+          <button onclick="window.location.href='#about'"
+            class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-orange-600 transition flex items-center justify-center gap-2">
+            Get Contact <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- 3 -->
+        <div
+          class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div
+            class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors">
+            <i class="fas fa-shield-alt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Cybersecurity Solutions</h3>
+          <p class="text-slate-600 mb-6 text-sm">
+            Security audits, penetration testing, and protection systems to keep your platform safe.
+          </p>
+          <button onclick="window.location.href='#about'"
+            class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-red-600 transition flex items-center justify-center gap-2">
+            Get Contact <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- 4 -->
+        <div
+          class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div
+            class="w-16 h-16 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+            <i class="fas fa-wallet text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Financial Systems Solutions</h3>
+          <p class="text-slate-600 mb-6 text-sm">
+            Build fintech apps, payment systems, wallets, VTU platforms, and transaction automation tools.
+          </p>
+          <button onclick="window.location.href='#about'"
+            class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-green-600 transition flex items-center justify-center gap-2">
+            Get Contact <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- 5 -->
+        <div
+          class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div
+            class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+            <i class="fas fa-bullhorn text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Digital Marketing & SEO</h3>
+          <p class="text-slate-600 mb-6 text-sm">
+            Grow your brand with SEO, social media marketing, ads, and audience targeting strategies.
+          </p>
+          <button onclick="window.location.href='#about'"
+            class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-purple-600 transition flex items-center justify-center gap-2">
+            Get Contact <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+        <div
+  class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+  
+  <div
+    class="w-16 h-16 bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
+    <i class="fas fa-briefcase text-2xl"></i>
+  </div>
+  
+  <h3 class="text-xl font-bold text-slate-800 mb-3">Business Branding & Company Management</h3>
+  
+  <p class="text-slate-600 mb-6 leading-relaxed text-sm">
+    We help startups and companies build strong brands, manage operations efficiently, and establish a professional market presence.
+  </p>
+  
+  <button onclick="window.location.href='contact.php'"
+    class="w-full py-3 px-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-yellow-600 transition-colors flex items-center justify-center gap-2">
+    Get Service <i class="fas fa-arrow-right text-xs"></i>
+  </button>
+</div>
 
       </div>
     </div>
@@ -381,6 +503,61 @@ $result = mysqli_query($conn, $query);
       </div>
     </div>
   </section>
+<section id="ceo" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <!-- IMAGE -->
+      <div class="relative group">
+        <div class="absolute inset-0 bg-blue-600/10 rounded-3xl blur-2xl group-hover:blur-3xl transition"></div>
+        <img src="uploads/ceo.jpeg" alt="CEO Image"
+          class="relative w-full h-[500px] object-cover rounded-3xl shadow-2xl border border-slate-100">
+      </div>
+
+      <!-- TEXT -->
+      <div>
+        <span class="text-blue-600 font-bold text-sm uppercase tracking-wider">
+          Founder & CEO
+        </span>
+
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-2 mb-6">
+          Muhammad Muhammad Sarkinbariki
+        </h2>
+
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Muhammad Muhammad Sarkinbariki is the Founder and CEO of <span class="font-semibold text-slate-800">WAHEEMTECH</span>, 
+          a forward-thinking technology company focused on delivering innovative DeepTech and Fintech solutions for the next generation.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-4">
+          With a strong background in Mechatronics Engineering and Electrical & Electronics Engineering, 
+          he combines deep technical expertise with visionary leadership to build impactful, scalable systems.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-4">
+          Based in Minna, Niger State, Nigeria, he is passionate about empowering young innovators through 
+          technology, digital transformation, and financial intelligence.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-6">
+          Founded on July 24, 2022, WAHEEMTECH is a fully registered limited liability company under the Corporate Affairs Commission (CAC) of Nigeria. 
+          Built as a strong, family-driven brand, the company stands for excellence, integrity, and cutting-edge innovation.
+        </p>
+
+        <!-- MISSION BOX -->
+        <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-lg">
+          <p class="text-sm uppercase text-blue-300 font-semibold mb-2">Our Mission</p>
+          <p class="text-lg font-bold">
+            “Anything Tech — We’re active for your solution.”
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <section id="contact" class="py-24 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -429,7 +606,7 @@ $result = mysqli_query($conn, $query);
                 </div>
                 <div>
                   <p class="text-xs text-blue-200 uppercase font-bold tracking-wider">Location</p>
-                  <p class="font-semibold text-lg">Nigeria (Virtual Hub)</p>
+                  <p class="font-semibold text-lg">Nigeria, London street area 2 gidan matasa Niger state minna</p>
                 </div>
               </div>
             </div>
@@ -449,28 +626,27 @@ $result = mysqli_query($conn, $query);
 
         <div class="bg-white rounded-3xl p-8 md:p-10 border border-slate-100 shadow-sm">
           <h3 class="text-xl font-bold text-slate-800 mb-8 uppercase tracking-tight">Send Us Your Feedback</h3>
-        <form action="contact_process.php" method="POST" class="space-y-5">
+          <form action="contact_process.php" method="POST" class="space-y-5">
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-    <input type="text" name="full_name" placeholder="Full Name" required
-      class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <input type="text" name="full_name" placeholder="Full Name" required
+                class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
 
-    <input type="email" name="email" placeholder="Email Address" required
-      class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
-  </div>
+              <input type="email" name="email" placeholder="Email Address" required
+                class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+            </div>
 
-  <input type="text" name="subject" placeholder="Subject" required
-    class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
+            <input type="text" name="subject" placeholder="Subject" required
+              class="w-full px-5 py-4 rounded-2xl bg-slate-50 border">
 
-  <textarea name="message" rows="5" placeholder="Your Message" required
-    class="w-full px-5 py-4 rounded-2xl bg-slate-50 border resize-none"></textarea>
+            <textarea name="message" rows="5" placeholder="Your Message" required
+              class="w-full px-5 py-4 rounded-2xl bg-slate-50 border resize-none"></textarea>
 
-  <button type="submit"
-    class="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold">
-    SUBMIT NOW
-  </button>
+            <button type="submit" class="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold">
+              SUBMIT NOW
+            </button>
 
-</form>
+          </form>
 
         </div>
 
@@ -479,77 +655,84 @@ $result = mysqli_query($conn, $query);
   </section>
 
   <section id="headline" class="py-24 bg-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+    <div
+      class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50">
+    </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-600 text-xs font-bold uppercase tracking-widest mb-4">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                </span>
-                Latest Updates
-            </div>
-            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6">
-                Tech Headlines & <span class="text-blue-600">Free Jobs</span>
-            </h2>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                We are building a hub for the latest tech news, high-paying job opportunities, and verified online gigs 
-                specifically for the Nigerian tech community.
-            </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <?php 
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-600 text-xs font-bold uppercase tracking-widest mb-4">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+          </span>
+          Latest Updates
+        </div>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6">
+          Tech Headlines & <span class="text-blue-600">Free Jobs</span>
+        </h2>
+        <p class="text-lg text-slate-600 leading-relaxed">
+          We are building a hub for the latest tech news, high-paying job opportunities, and verified online gigs
+          specifically for the Nigerian tech community.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <?php 
             if (mysqli_num_rows($result) > 0) {
                 while($row = mysqli_fetch_assoc($result)) { 
             ?>
-                <a href="<?php echo $row['post_link']; ?>" target="_blank" class="block group">
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 h-full flex flex-col gap-4 transition hover:bg-white hover:shadow-xl">
-                        
-                        <div class="flex items-center gap-4">
-                            <div class="p-3 bg-white rounded-xl shadow-sm group-hover:scale-110 transition">
-                                <?php 
+        <a href="<?php echo $row['post_link']; ?>" target="_blank" class="block group">
+          <div
+            class="p-6 bg-slate-50 rounded-2xl border border-slate-100 h-full flex flex-col gap-4 transition hover:bg-white hover:shadow-xl">
+
+            <div class="flex items-center gap-4">
+              <div class="p-3 bg-white rounded-xl shadow-sm group-hover:scale-110 transition">
+                <?php 
                                     // Canza Icon dangane da Platform
                                     if(strtolower($row['platform']) == 'facebook') echo '<i class="fab fa-facebook text-blue-600 text-xl"></i>';
                                     elseif(strtolower($row['platform']) == 'twitter') echo '<i class="fab fa-twitter text-blue-400 text-xl"></i>';
                                     else echo '<i class="fas fa-newspaper text-purple-600 text-xl"></i>';
                                 ?>
-                            </div>
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                                <?php echo $row['platform']; ?>
-                            </span>
-                        </div>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                <?php echo $row['platform']; ?>
+              </span>
+            </div>
 
-                        <div>
-                            <h4 class="font-bold text-slate-800 text-lg mb-2 group-hover:text-blue-600 transition">
-                                <?php echo $row['title']; ?>
-                            </h4>
-                            <p class="text-sm text-slate-500 line-clamp-3">
-                                Click to read the full update on <?php echo $row['platform']; ?>.
-                            </p>
-                        </div>
-                        
-                        <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                            <span class="text-xs text-slate-400"><?php echo date('M d, Y', strtotime($row['created_at'])); ?></span>
-                            <span class="text-blue-600 text-xs font-bold italic">Check it out →</span>
-                        </div>
-                    </div>
-                </a>
-            <?php 
+            <div>
+              <h4 class="font-bold text-slate-800 text-lg mb-2 group-hover:text-blue-600 transition">
+                <?php echo $row['title']; ?>
+              </h4>
+              <p class="text-sm text-slate-500 line-clamp-3">
+                Click to read the full update on
+                <?php echo $row['platform']; ?>.
+              </p>
+            </div>
+
+            <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-400">
+                <?php echo date('M d, Y', strtotime($row['created_at'])); ?>
+              </span>
+              <span class="text-blue-600 text-xs font-bold italic">Check it out →</span>
+            </div>
+          </div>
+        </a>
+        <?php 
                 }
             } else {
                 // Idan babu komai a Database
                 echo '<div class="col-span-full text-center p-12 bg-slate-50 rounded-2xl border-2 border-dashed border-slate-200 text-slate-400">No news posted yet. Stay tuned!</div>';
             }
             ?>
-        </div>
+      </div>
 
-     
+
 
     </div>
-</section>
+  </section>
   <section id="connect" class="py-24 bg-slate-950 text-white overflow-hidden relative">
     <div
       class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50">
@@ -567,37 +750,37 @@ $result = mysqli_query($conn, $query);
 
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-20">
 
-        <a href="#"
+        <a href="https://youtube.com/@waheemtech?si=WOyxM3UXfYjM_d0-"
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-red-500/50 hover:bg-red-500/5 transition-all duration-300 text-center">
           <i class="fab fa-youtube text-3xl mb-4 text-slate-500 group-hover:text-red-500 transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">YouTube</p>
         </a>
 
-        <a href="#"
+        <a href="https://t.me/waheemtech01"
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-blue-400/50 hover:bg-blue-400/5 transition-all duration-300 text-center">
           <i class="fab fa-telegram-plane text-3xl mb-4 text-slate-500 group-hover:text-blue-400 transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">Telegram</p>
         </a>
 
-        <a href="#"
+        <a href="whatsapp://send?phone=+234-9061764966&text=Hello%20WaheemTech%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-green-500/50 hover:bg-green-500/5 transition-all duration-300 text-center">
           <i class="fab fa-whatsapp text-3xl mb-4 text-slate-500 group-hover:text-green-500 transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">WhatsApp</p>
         </a>
 
-        <a href="#"
+        <a href="https://www.tiktok.com/@waheem_tech?_r=1&_t=ZS-959hv0xJLJx"
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-pink-500/50 hover:bg-pink-500/5 transition-all duration-300 text-center">
           <i class="fab fa-tiktok text-3xl mb-4 text-slate-500 group-hover:text-white transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">TikTok</p>
         </a>
 
-        <a href="#"
+        <a href="https://www.instagram.com/waheemtech001?igsh=MTg1YnR1aThmNjN4eg%3D%3D&utm_source=qr"
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-purple-500/50 hover:bg-purple-500/5 transition-all duration-300 text-center">
           <i class="fab fa-instagram text-3xl mb-4 text-slate-500 group-hover:text-purple-400 transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">Instagram</p>
         </a>
 
-        <a href="#"
+        <a href="https://x.com/waheemtech?s=21"
           class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-slate-400 hover:bg-slate-400/5 transition-all duration-300 text-center">
           <i class="fab fa-x-twitter text-3xl mb-4 text-slate-500 group-hover:text-white transition-colors"></i>
           <p class="font-bold text-sm uppercase tracking-wider">Twitter</p>
@@ -654,10 +837,10 @@ $result = mysqli_query($conn, $query);
       </div>
     </div>
   </footer>
-<div id="fb-root"></div>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1"></script>
-<script async src="https://www.instagram.com/embed.js"></script>
-<script async src="https://platform.twitter.com/widgets.js"></script>
+  <div id="fb-root"></div>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1"></script>
+  <script async src="https://www.instagram.com/embed.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js"></script>
 
   <script src="script.js"></script>
 </body>

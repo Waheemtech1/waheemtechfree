@@ -44,7 +44,7 @@ $total_news = $news_row['total'];
     <aside class="w-64 bg-white border-r border-slate-200 hidden lg:flex flex-col sticky top-0 h-screen">
       <div class="p-6 border-b border-slate-50 flex items-center gap-3">
         <div class="bg-blue-600 p-2 rounded-lg text-white">
-          <i class="fas fa-shield-halved"></i>
+          <i class="fas fa-w"></i>
         </div>
         <span class="font-black text-slate-800 tracking-tighter uppercase text-sm">Waheem<span
             class="text-blue-600">Tech</span></span>
@@ -192,7 +192,7 @@ $total_news = $news_row['total'];
                 <?php
                     }
                 } else {
-                    echo "<tr><td colspan='5' class='p-4 text-center text-slate-500'>Babu dalibi ko daya.</td></tr>";
+                    echo "<tr><td colspan='5' class='p-4 text-center text-slate-500'>No students found.</td></tr>";
                 }
                 ?>
               </tbody>
